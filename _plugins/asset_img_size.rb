@@ -8,6 +8,7 @@ module Jekyll
             file = file.to_s.split('x')
             file.map! { |i| if i == '' then '100%' else i + 'px' end }
             if file.size < 2 then file.push('100%') end
+            return file
           else
             nil
           end
