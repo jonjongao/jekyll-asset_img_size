@@ -1,5 +1,7 @@
 # AssetImgSize
 
+![asset_img_size](http://i.imgur.com/KmaJeuJ.jpg)
+
 Liquid filter which convert asset path to image size parameter.
 
 ## Installation

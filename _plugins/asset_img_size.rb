@@ -1,7 +1,8 @@
 module Jekyll
   module Filter
     def asset_img_size(input)
-      file = input.to_s.split('/').last.split('.').first
+      file = input.to_s&.split('/').last&.split('.')&.first
+      if file == nil then return nil end
       if file.include? '_'
         file = file.split('_').last
           if file.include? 'x'
